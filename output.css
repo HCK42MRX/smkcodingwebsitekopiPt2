@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.section-recomendation-menu .card .card-body .cta-and-description, .section-recomendation-menu .card .card-body .rating-text, .section-recomendation-menu .card .card-body .menu-detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.content-about-us {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section-about-us {
+  margin-top: 90px;
+  background-color: #f6ebda;
+  background-image: url(assets/Images/bg-aboutus.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-blend-mode: overlay;
+}
+
+.img-aboutus {
+  background-color: rgba(41, 41, 41, 0.082);
+  padding: 5px;
+  border-radius: 14px;
+  position: relative;
+  top: -60px;
+  width: 30%;
+}
+
+.container-aboutus {
+  width: 40%;
+}
+.container-aboutus .content-text-aboutus {
+  width: 90%;
+}
+.container-aboutus .content-text-aboutus .title-aboutus {
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-size: 35px;
+}
+.container-aboutus .content-text-aboutus .detail-aboutus {
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+.container-aboutus .content-text-aboutus p {
+  color: rgba(41, 41, 41, 0.61);
+  font-weight: 400;
+}
+.container-aboutus .content-text-aboutus span {
+  border-bottom: 4px solid #fe9826;
+}
+.container-aboutus button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #2f2105;
+  border: none;
+  color: #d19520;
+  font-weight: 700;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.section-recomendation-menu {
+  margin-top: 100px;
+}
+.section-recomendation-menu .content-recomendation-menu {
+  max-width: 1100px;
+}
+.section-recomendation-menu .card-menus {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-recomendation-menu span {
+  border-bottom: 4px solid #fe9826;
+}
+.section-recomendation-menu .card {
+  margin-top: 50px;
+  filter: drop-shadow(0px 0px 9px rgba(0, 0, 0, 0.2));
+}
+.section-recomendation-menu .card .card-body {
+  border-radius: 14px;
+  background-color: white;
+  padding: 20px;
+  position: relative;
+}
+.section-recomendation-menu .card .card-body .img-products {
+  width: 100%;
+  border-radius: 12px;
+}
+.section-recomendation-menu .card .card-body .menu-name {
+  font-weight: 600;
+}
+.section-recomendation-menu .card .card-body .rating {
+  color: black;
+  position: absolute;
+  top: 30px;
+  left: 35px;
+}
+.section-recomendation-menu .card .card-body .rating-text {
+  align-items: center;
+  column-gap: 5px;
+  font-size: 15px;
+  background-color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+.section-recomendation-menu .card .card-body .bg-rating {
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.616);
+  height: 32px;
+  padding: 6px;
+}
+.section-recomendation-menu .card .card-body .cta-and-description {
+  align-items: center;
+  margin-top: 10px;
+}
+.section-recomendation-menu .card .card-body .cta-and-description .description-menu p {
+  width: 170px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.589);
+}
+.section-recomendation-menu .card .card-body .cta-and-description .cart img {
+  width: 20px;
+  border-radius: 30px;
+  background-color: #ff902a;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=output.css.map */

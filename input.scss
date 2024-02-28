@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$about-color: #f6ebda;
+$justify-content: space-around;
+$border-bottom-color: #fe9826;
+
+// mixing
+@mixin background-transparant() {
+  background-color: rgba(41, 41, 41, 0.082);
+  padding: 5px;
+  border-radius: 14px;
+}
+
+@mixin border-bottom() {
+  border-bottom: 4px solid $border-bottom-color;
+}
+
+@mixin aboutus-primary-text() {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+// mixing ENDS
+
+// shared styling
+
+%product-section-display-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+%container-shared {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+// shared styling ENDS
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  @extend %container-shared;
+}
+
+.content-about-us {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: center;
+}
+
+.section-about-us {
+  margin-top: 90px;
+  background-color: $about-color;
+  background-image: url(assets/Images/bg-aboutus.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-blend-mode: overlay;
+}
+
+.img-aboutus {
+  @include background-transparant();
+  position: relative;
+  top: -60px;
+  width: 30%;
+}
+
+.container-aboutus {
+  width: 40%;
+  .content-text-aboutus {
+    width: 90%;
+    .title-aboutus {
+      @include aboutus-primary-text();
+      font-size: 35px;
+    }
+    .detail-aboutus {
+      @include aboutus-primary-text();
+      font-size: 30px;
+    }
+    p {
+      color: rgba(41, 41, 41, 0.61);
+      font-weight: 400;
+    }
+    span {
+      @include border-bottom();
+    }
+  }
+  button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #2f2105;
+    border: none;
+    color: #d19520;
+    font-weight: 700;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+}
+
+.section-recomendation-menu {
+  margin-top: 100px;
+  .content-recomendation-menu{
+    max-width: 1100px;
+  }
+  .card-menus{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  span {
+    @include border-bottom();
+  }
+  .card {
+    margin-top: 50px;
+    filter: drop-shadow(0px 0px 9px #00000033);
+    .card-body {
+      border-radius: 14px;
+      background-color: white;
+      padding: 20px;
+      position: relative;
+      .menu-detail {
+        @extend %product-section-display-flex;
+      }
+      .img-products {
+        width: 100%;
+        border-radius: 12px;
+      }
+      .menu-name {
+        font-weight: 600;
+      }
+      .rating {
+        color: black;
+        position: absolute;
+        top: 30px;
+        left: 35px;
+      }
+      .rating-text {
+        @extend %product-section-display-flex;
+        align-items: center;
+        column-gap: 5px;
+        font-size: 15px;
+        background-color: white;
+        padding: 4px 12px;
+        border-radius: 20px;
+      }
+      .bg-rating {
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.616);
+        height: 32px;
+        padding: 6px;
+      }
+
+      .cta-and-description{
+        @extend %product-section-display-flex;
+        align-items: center;
+        margin-top: 10px;
+        .description-menu{
+          p{
+            width: 170px;
+            font-size: 15px;
+            color: rgba(0, 0, 0, 0.589);
+          }
+        }
+  
+        .cart img {
+          width: 20px;
+          border-radius: 30px;
+          background-color: #ff902a;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
